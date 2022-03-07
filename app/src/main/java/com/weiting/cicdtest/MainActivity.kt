@@ -9,7 +9,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         var numberTest = 0
-        val alphabetTest = "A"
+        val alphabetTest = "B"
 
     }
 }
