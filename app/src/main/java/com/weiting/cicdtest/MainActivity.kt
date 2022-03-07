@@ -11,5 +11,7 @@ class MainActivity : AppCompatActivity() {
         val alphabetTest = "D"
         var numberTest = 4
 
+        val test = "No conflict"
+
     }
 }
