@@ -8,8 +8,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var numberTest = 0
         val alphabetTest = "B"
+        var numberTest = 2
 
     }
 }
