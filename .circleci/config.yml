@@ -60,7 +60,7 @@ workflows:
           build-type: staging
           filters:
             branches:
-              only: /^scrum(?:-.+)?$/
+              only: /^scrum.*/
 
   build-and-test-debug:
     jobs:
