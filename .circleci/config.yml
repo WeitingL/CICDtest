@@ -10,15 +10,15 @@ jobs:
     resource_class: app_cicd/androidtest
 
     parameters:
-      buildType:
-        defualt: debug
+      build-type:
+        default: debug
         type: enum
         enum:
           - debug
           - staging
           - release
     environment:
-      BUILD_TYPE: << parameter.buildtype >>
+      BUILD_TYPE: << parameters.build-type >>
 
     steps:
       - run:
@@ -40,7 +40,7 @@ workflows:
   build-and-test-main:
     jobs:
       - build-and-unit-test:
-          buildType: release
+          build-type: release
           filters:
             branches:
               only: main
