@@ -44,3 +44,28 @@ workflows:
           filters:
             branches:
               only: main
+
+  build-and-test-release:
+    jobs:
+      - build-and-unit-test:
+          build-type: release
+          filters:
+            branches:
+              only: dev_br
+
+
+  build-and-test-staging:
+    jobs:
+      - build-and-unit-test:
+          build-type: staging
+          filters:
+            branches:
+              only: /scrum(?:-.+)?$/
+
+  build-and-test-debug:
+    jobs:
+      - build-and-unit-test:
+          build-type: debug
+          filters:
+            branches:
+              only: /feature(?:-.+)?$/
