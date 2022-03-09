@@ -68,6 +68,6 @@ workflows:
           build-type: debug
           filters:
             branches:
-              only: /feature(?:-.+)?$/
+              only: /^feature.*/
 
 
