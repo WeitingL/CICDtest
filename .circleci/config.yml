@@ -6,8 +6,8 @@ orbs:
 jobs:
 
   build-and-unit-test:
-    machine: true
-    resource_class: app_cicd/androidtest
+    executor:
+      name: android/android-machine
 
     parameters:
       build-type:
